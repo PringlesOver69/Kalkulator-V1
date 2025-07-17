@@ -53,6 +53,7 @@ kalkKnapp.forEach(knapp => {
 function calculate(content) {
     const result = eval(content);
 
+    // Passer på at tallene ikke blir lengre enn 10 tall
     const maxLength = 10;
     let resultStr = result.toString();
 
