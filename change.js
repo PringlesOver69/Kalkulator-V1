@@ -1,2 +1,2 @@
 console.log("hello world");
-console.log("Versjon 8: Tester med en kopi");
+console.log("Versjon 9: Ny SSH nøkkel");
