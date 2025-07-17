@@ -1,0 +1,178 @@
+body {
+    display: flex;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    height: 100vh;
+    justify-content: center;
+}
+
+button {
+    height: 95px;
+    width: 95px;
+    border-radius: 50px;
+    border: none;
+    background-color: #20291e;
+    color: lightgrey;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #2c3829;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-size: 50px;
+    color: grey;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 25px;
+}
+
+#delete {
+    transform: rotate(180deg);
+    font-size: 30px;
+    padding-top: 0px;
+    margin-top: 28px;
+}
+
+#logg_button {
+    height: 30px;
+    width: 40px;
+}
+
+#logg_button:hover {
+    background-color: grey;
+}
+
+#clear {
+    background-color: #3f635c;
+    border: none;
+}
+
+#clear:hover {
+    background-color: #324f49;
+}
+
+#meny_knapp {
+    height: 15px;
+    margin-top: 3px;
+}
+
+#logg {
+    font-family: "Roboto";
+    font-size: 30px;
+    color: grey;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-weight: 500;
+    opacity: 75%;
+}
+
+.user_interface {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 460px;
+    grid-template-rows: 230px 100px 530px;
+    width: 460px;
+    height: 860px;
+    border: solid;
+    border-radius: 30px;
+    border-color: #212e1e;
+    border-width: 7px;
+}
+
+.display {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(50, 56, 42);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px 30px 0px 30px;
+}
+
+.display_entry {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.øvre_del {
+    z-index: 1;
+    background-color: rgb(13, 18, 12);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+
+#square_button {
+    margin-right: 5px;
+}
+
+#potens {
+    margin-top: 30px;
+}
+
+.øvre_del button {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+
+.øvre_del button:hover {
+    background-color: #141c13;
+}
+
+.nedre_del {
+    z-index: 1;
+    background-color: rgb(13, 18, 12);
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 30px 30px 30px
+}
+
+.første_del {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.redigering {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin-right: 5px;
+}
+
+.tall {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.andre_del {
+    width: 100px;
+}
+
+.matte_operasjoner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    height: 100%;
+}
+
+.logg_button {
+    background-color: darkgrey;
+    border: solid;
+    border-color: #20291e;
+}

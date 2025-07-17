@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="user_interface">
+      <div class="display">
+        <div class="logg">
+          <!-- En knapp som egentlig skulle brukes for loggen, men kom på at å redigere så in en 'logg-bar' ville tatt for mye tid, så den gjør ingenting -->
+          <button class="logg_button" id="logg_button">
+            <img src="Bilder/menyBilde.png" id="meny_knapp" />
+          </button>
+        </div>
+        <div class="display_entry">
+          <div id="logg"></div>
+          <h1 id="display_port"></h1>
+        </div>
+      </div>
+      <div class="øvre_del" id="øvre_del">
+        <button data-value="square" class="kalk_knapp">
+          <p id="square_button">&radic;</p>
+        </button>
+        <button data-value="3.14" class="kalk_knapp"><p>&pi;</p></button>
+        <button data-value="**" class="kalk_knapp">
+          <p id="potens">&#94;</p>
+        </button>
+        <button data-value="!" class="kalk_knapp"><p>&excl;</p></button>
+
+        <!-- La til denne knappen her i tilfelle jeg vil legge til noen flere alternativer til regne operasjoner, som sin() cos() eller tan(). for nå så gjør den ingenting -->
+        <button data-value="dropdown" class="kalk_knapp"><p>&or;</p></button>
+      </div>
+      <div class="nedre_del">
+        <div class="første_del">
+          <div class="redigering">
+            <button id="clear" class="kalk_knapp" data-value="clear">
+              <p>AC</p>
+            </button>
+            <button class="kalk_knapp" data-value="()">
+              <p>&#40; &#41;</p>
+            </button>
+            <button class="kalk_knapp" data-value="%"><p>&#37;</p></button>
+          </div>
+          <div class="tall">
+            <button class="kalk_knapp" data-value="7"><p>&#55;</p></button>
+            <button class="kalk_knapp" data-value="8"><p>&#56;</p></button>
+            <button class="kalk_knapp" data-value="9"><p>&#57;</p></button>
+            <button class="kalk_knapp" data-value="4"><p>&#52;</p></button>
+            <button class="kalk_knapp" data-value="5"><p>&#53;</p></button>
+            <button class="kalk_knapp" data-value="6"><p>&#54;</p></button>
+            <button class="kalk_knapp" data-value="1"><p>&#49;</p></button>
+            <button class="kalk_knapp" data-value="2"><p>&#50;</p></button>
+            <button class="kalk_knapp" data-value="3"><p>&#51;</p></button>
+            <button class="kalk_knapp" data-value="0"><p>&#48;</p></button>
+            <button class="kalk_knapp" data-value="."><p>&#44;</p></button>
+            <button class="kalk_knapp" data-value="|">
+              <p id="delete">&#10158;</p>
+            </button>
+          </div>
+        </div>
+        <div class="andre_del">
+          <div class="matte_operasjoner">
+            <button class="kalk_knapp" data-value="/"><p>&divide;</p></button>
+            <button class="kalk_knapp" data-value="*"><p>&times;</p></button>
+            <button class="kalk_knapp" data-value="-"><p>&minus;</p></button>
+            <button class="kalk_knapp" data-value="+"><p>&plus;</p></button>
+            <button class="kalk_knapp" data-value="=">
+              <p>&equals;</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
