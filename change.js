@@ -1,2 +1,2 @@
 console.log("hello world");
-console.log("Oppdatert versjon 3");
+console.log("Versjon 7: Mer testing av Git");
